@@ -49,6 +49,8 @@ class ApiController extends Controller
         $pessoa = new Pessoas();
         $pessoa->id = $request->id;
         $pessoa->nome = $request->nome;
+        $pessoa->cpf = $request->cpf;
+        $pessoa->telefone = $request->telefone;
         $pessoa->email = $request->email;
 
         $pessoa->save();
